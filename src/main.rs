@@ -28,7 +28,7 @@ fn main() {
     let mut args = std::env::args();
     args.next(); // argv[0] überspringen
 
-    // týndur gibt \n immer als neue Zeile aus, auch am Ender der Zeile.
+    // týndur gibt \n immer als neue Zeile aus, auch am Ende der Zeile.
     // Um Leerzeilen zu vermeiden, müssen wir uns hier also auf 79
     // Reihen beschränken.
     let w = 79;
