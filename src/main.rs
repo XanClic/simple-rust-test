@@ -34,14 +34,7 @@ fn main() {
     let w = 79;
     let h = 24;
 
-    let n_str = args.next().unwrap_or("42".to_string());
-    let n =
-        if let Ok(x) = n_str.parse() {
-            x
-        } else {
-            eprintln!("{} ist keine gültige Ganzzahl", n_str);
-            std::process::exit(1);
-        };
+    let n = args.next().unwrap_or("42".to_string()).parse().unwrap();
 
     for yi in 0..h {
         let y = 1.0 - (yi as f32) / (h as f32) * 2.0;
